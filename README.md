@@ -17,6 +17,10 @@ Comparison of various technologies for creating distributed applications.
 * *Governance*: How changes are proposed and introduced into a network.
 * *Node*: A logically independant participant in a decentralised computational network. E.g an Ethereum miner. 
 
+## Related Technologies
+
+* Microsoft's Coco Framework [whitepaper](https://github.com/Azure/coco-framework/blob/master/docs/Coco%20Framework%20whitepaper.pdf)
+
 ## Comparison
 
 ### Summary
