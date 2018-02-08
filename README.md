@@ -16,6 +16,7 @@ Comparison of various technologies for creating distributed applications.
 
 * *Governance*: How changes are proposed and introduced into a network.
 * *Node*: A logically independant participant in a decentralised computational network. E.g an Ethereum miner. 
+* *Zero Knowledge Proof*: One party, the prover, can convince another party, the verifier, that a given statement is true, without revealing any information beyond the validity of the statement itself. Implemented in Ethereum as ZK-Snarks. [Read the white paper](https://eprint.iacr.org/2018/046)
 
 ## Related Technologies
 
@@ -30,7 +31,7 @@ Comparison of various technologies for creating distributed applications.
 | Governance | Developer Community| ?? | Linux Foundation | R3 Consortium |
 | Consensus | PoA, PoW, PoS (beta) | RAFT, Instanbul BFT | Pluggable (PoW, PoA, BFT etc) | Notary: RAFT |
 | Permissions |  |  |  |  |
-| Privacy |  |  |  |  |
+| Confidentiality |  |  |  |  |
 | Development | Solidity & Vyper | Solidity | Go & NodeJS | Kotlin & Java |
 | Client | web3 | web3?? | ?? | Node HTTP |
 | Community | open source developers | ?? | ?? | large financial institutions |
@@ -64,8 +65,15 @@ Properly permissioned blockchain networks differ from unpermissioned blockchain 
 | [Microsoft Coco Framework](https://github.com/Azure/coco-framework/blob/master/docs/Coco%20Framework%20whitepaper.pdf)| Yes | Yes | Hyperledger Sawtooth | Yes |
 
 
-### Privacy
 
+### Confidentiality
+
+
+|  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
+|----|----------|--------|--------------------|----------|
+| Private Data | [Maybe](https://github.com/ethereum/wiki/wiki/Byzantium-Hard-Fork-changes.md) via ZK-Snarks | Yes via [Constellation](https://github.com/jpmorganchase/quorum/wiki/Transaction-Processing) | Yes via [Channels](http://hyperledger-fabric.readthedocs.io/en/release/channels.html) | Yes, but data is shared with [notaries](https://docs.corda.net/key-concepts-notaries.html) |
+
+Note on private data and Coco Framework: support for (confidential transactions) should be present(or added)in the integrated blockchain protocol.
 
 ### Community
 
