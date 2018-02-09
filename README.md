@@ -71,7 +71,7 @@ Properly permissioned blockchain networks differ from unpermissioned blockchain 
 
 |  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
 |----|----------|--------|--------------------|----------|
-| Private Data | [Maybe](https://github.com/ethereum/wiki/wiki/Byzantium-Hard-Fork-changes.md) via ZK-Snarks | Yes via [Constellation](https://github.com/jpmorganchase/quorum/wiki/Transaction-Processing) | Yes via [Channels](http://hyperledger-fabric.readthedocs.io/en/release/channels.html) | Yes, but data is shared with [notaries](https://docs.corda.net/key-concepts-notaries.html) |
+| Private Data | Possible but not native | Natively yes via [Constellation](https://github.com/jpmorganchase/quorum/wiki/Transaction-Processing) | Natively yes via [Channels](http://hyperledger-fabric.readthedocs.io/en/release/channels.html) | Natively yes, because all communication is direct P2P, but data is shared with [validating notaries](https://docs.corda.net/key-concepts-notaries.html) |
 
 Note on private data and Coco Framework: support for (confidential transactions) should be present(or added)in the integrated blockchain protocol.
 
