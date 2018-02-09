@@ -34,7 +34,7 @@ Comparison of various technologies for creating distributed applications.
 | Confidentiality |  |  |  |  |
 | Development | Solidity & Vyper | Solidity | Go & NodeJS | Kotlin & Java |
 | Client | web3 | web3?? | ?? | Node HTTP |
-| Community | open source developers | ?? | ?? | large financial institutions |
+| Weaknesses |  |  |  |  |
 | Ecosystem | Truffle, OpenZepplin, Cosmos | ?? | ?? |  |
 | Documentation | Good | ?? | ?? | Good |
 | Deployed to Production | Yes | ?? | ?? | No |
@@ -75,7 +75,7 @@ Properly permissioned blockchain networks differ from unpermissioned blockchain 
 
 Note on private data and Coco Framework: support for (confidential transactions) should be present(or added)in the integrated blockchain protocol.
 
-### Community
+### Weaknesses
 
 
 ### Development
