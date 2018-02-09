@@ -86,6 +86,13 @@ Note on private data and Coco Framework: support for (confidential transactions)
 
 ### Documentation
 
+| Source | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
+|---|----------|--------|--------------------|----------|
+| Official | [EthDocs](http://www.ethdocs.org/en/latest/) , [Wiki](https://github.com/ethereum/wiki/wiki)| [Wiki](https://github.com/jpmorganchase/quorum/wiki) | [Read the Docs](https://hyperledger-fabric.readthedocs.io/en/release/) | [Docs](https://docs.corda.net/) |
+| Github | [ethereum](https://github.com/ethereum/) | [J.P. Morgan Chase](https://github.com/jpmorganchase) | [hyperledger](https://github.com/hyperledger) | [Corda](https://github.com/corda) |
+| Forums | [Stack Exchange](https://ethereum.stackexchange.com/) | [tagged Quorum](https://stackoverflow.com/questions/tagged/quorum) | [tagged Hyperledger-fabric](https://stackoverflow.com/questions/tagged/hyperledger-fabric) | [tagged Corda](https://stackoverflow.com/questions/tagged/corda) |
+| Chat | [Gitter](https://gitter.im/ethereum/home) | ? | [Rocket](https://chat.hyperledger.org/) | [Slack](http://slack.corda.net/) |
+
 
 ### Concepts
 
