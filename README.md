@@ -75,8 +75,12 @@ Properly permissioned blockchain networks differ from unpermissioned blockchain 
 
 Note on private data and Coco Framework: support for (confidential transactions) should be present(or added)in the integrated blockchain protocol.
 
-### Weaknesses
+### Strengths & Weaknesses
 
+|  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
+|----|----------|--------|--------------------|----------|
+| Strengths |  |  |  |  |
+| Weaknesses |  |  |  |  |
 
 ### Development
 
