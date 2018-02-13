@@ -88,14 +88,14 @@ Note on private data and Coco Framework: support for (confidential transactions)
 |  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
 |----|----------|--------|--------------------|----------|
 | Contract^1 Language | [Solidity](https://solidity.readthedocs.io/en/develop/), Serpent (deprecated) , [Vyper (experimental)](https://github.com/ethereum/vyper) | [Solidity](https://solidity.readthedocs.io/en/develop/), Serpent (deprecated) , [Vyper (experimental)](https://github.com/ethereum/vyper) | [Chaincode](http://hyperledger-fabric.readthedocs.io/en/release/chaincode.html) can be written in any programming language and executed in containers. The first fully supported chaincode language is Golang | Java, Kotlin |
-| Execution Environment | EVM, implemented by: [Geth](https://github.com/ethereum/go-ethereum) in golang, or [Parity](https://www.parity.io/) in Rust, [cpp etherum](http://www.ethdocs.org/en/latest/ethereum-clients/cpp-ethereum/) in c++ | Modified EVM, fork of Geth | Docker (Ubuntu), with base image on [DockerHub](https://hub.docker.com/r/hyperledger/fabric-baseimage/) | Java Virtual Machine (JVM) |
+| Execution Environment | EVM^2, implemented by: [Geth](https://github.com/ethereum/go-ethereum) in golang, or [Parity](https://www.parity.io/) in Rust, [cpp etherum](http://www.ethdocs.org/en/latest/ethereum-clients/cpp-ethereum/) in c++ | Modified EVM, fork of Geth | Docker (Ubuntu), with base image on [DockerHub](https://hub.docker.com/r/hyperledger/fabric-baseimage/) | Java Virtual Machine (JVM) |
 | External API | [JSONRPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) | [JSONRPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) [(modified)](https://github.com/jpmorganchase/quorum/wiki/Using-Quorum) | [CLI, REST](https://github.com/hyperledger-archives/fabric/tree/master/docs/API) | [Deprecated WebServer](https://github.com/corda/corda/blob/master/webserver/src/main/kotlin/net/corda/webserver/WebServer.kt) |
 | Client Library | [web3.js](https://github.com/ethereum/web3.js/), [web3j](https://web3j.io/) for Java & Android | [web3 (modified)](https://github.com/jpmorganchase/quorum/blob/master/docs/api.md) | Hyperledger Fabric SDK for Node.js | none |
 | Developer Tools | [Truffle](http://truffleframework.com/), [Embark](https://github.com/iurimatias/embark-framework), [Dapple](https://github.com/dapphub/dapple), [Remix](https://remix.ethereum.org/) solidity editor, [Eth Fiddle](https://ethfiddle.com/) solidity editor |  |  |  |
 
-1. distributed logic in the generic sense, not in the Corda specific sense.
+1. Distributed logic in the generic sense, not in the Corda specific sense.
 
-* The Ethereum Virtual Machine (EVM) can be thought of as a large decentralized computer containing millions of objects, called "accounts", which have the ability to maintain an internal database, execute code and talk to each other.
+2. The Ethereum Virtual Machine (EVM) can be thought of as a large decentralized computer containing millions of objects, called "accounts", which have the ability to maintain an internal database, execute code and talk to each other.
 
 ### Ecosystem
 
