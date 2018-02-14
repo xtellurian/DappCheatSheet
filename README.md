@@ -40,7 +40,13 @@ Comparison of various technologies for creating distributed applications.
 | Deployed to Production | Yes | ?? | ?? | No |
 
 
-### Governance
+### Networks & Governance
+
+|  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
+|----|----------|--------|--------------------|----------|
+| Public | Ethereum is generally domainated by ETH, but there exist *hard forks* including Ethereum Classic (ETC) and EtherZero (ETZ). There is one ETH [mainnet](http://ethdocs.org/en/latest/network/connecting-to-the-network.html) and several test nets including [Morden](http://ethdocs.org/en/latest/network/test-networks.html). Public networks generally use a PoW consensus algorithm. Governance of this network is determined only by the emergent behaviour of the nodes. In practice, governance is achieved by the community of developers. Disagreement in the community may result in a 'fork', eg: Ethereum Classic | No | No? | No |
+| Consortium/ Private | Anyone can create a new consortium or private network using PoW or PoA. The [Rinkeby](https://www.rinkeby.io/) testnet uses PoA. | Designed for consortium or private networks. Uses an Ethereum Network *and* a [Constellation](https://github.com/jpmorganchase/constellation) network side-by-side to provide private data features. | Designed for consortium or private networks. | Designed for consortium or private networks. |
+| Technology | [Ethereum Foundation](https://www.ethereum.org/foundation) | JP Morgan Chase | [Linux Foundation: Hyperledger Project](https://hyperledger.org/about/charter) | [R3](https://www.r3.com/): a network of [over 60 companies](https://www.r3.com/blog/2017/11/13/r3s-corda-partner-network-grows-to-over-60-companies-including-hewlett-packard-enterprise-intel-and-microsoft/) |
 
 
 ### Consensus
@@ -80,7 +86,7 @@ Note on private data and Coco Framework: support for (confidential transactions)
 |  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
 |----|----------|--------|--------------------|----------|
 | Strengths |  |  |  |  |
-| Weaknesses |  |  |  |  |
+| Weaknesses |  |  |  | * Unlike Ethereum's EVM that's guarenteed deterministic, there is no "Corda Virtual Machine" and Corda has no strong determinism guarantee. |
 
 ### Development
 
