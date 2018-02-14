@@ -116,13 +116,8 @@ Note on private data and Coco Framework: support for (confidential transactions)
 | Chat | [Gitter](https://gitter.im/ethereum/home) | ? | [Rocket](https://chat.hyperledger.org/) | [Slack](http://slack.corda.net/) |
 
 
-### Concepts
-
 
 ### Production
-
-
-
 
 
 
