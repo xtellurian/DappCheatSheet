@@ -40,13 +40,14 @@ Comparison of various technologies for creating distributed applications.
 | Deployed to Production | Yes | ?? | ?? | No |
 
 
-### Networks & Governance
+### Documentation
 
-|  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
-|----|----------|--------|--------------------|----------|
-| Public | Ethereum is generally domainated by ETH, but there exist *hard forks* including Ethereum Classic (ETC) and EtherZero (ETZ). There is one ETH [mainnet](http://ethdocs.org/en/latest/network/connecting-to-the-network.html) and several test nets including [Morden](http://ethdocs.org/en/latest/network/test-networks.html). Public networks generally use a PoW consensus algorithm. Governance of this network is determined only by the emergent behaviour of the nodes. In practice, governance is achieved by the community of developers. Disagreement in the community may result in a 'fork', eg: Ethereum Classic | No | No? | No |
-| Consortium/ Private | Anyone can create a new consortium or private network using PoW or PoA. The [Rinkeby](https://www.rinkeby.io/) testnet uses PoA. | Designed for consortium or private networks. Uses an Ethereum Network *and* a [Constellation](https://github.com/jpmorganchase/constellation) network side-by-side to provide private data features. | Designed for consortium or private networks. | Designed for consortium or private networks. |
-| Technology | [Ethereum Foundation](https://www.ethereum.org/foundation) | JP Morgan Chase | [Linux Foundation: Hyperledger Project](https://hyperledger.org/about/charter) | [R3](https://www.r3.com/): a network of [over 60 companies](https://www.r3.com/blog/2017/11/13/r3s-corda-partner-network-grows-to-over-60-companies-including-hewlett-packard-enterprise-intel-and-microsoft/) |
+| Source | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
+|---|----------|--------|--------------------|----------|
+| Official | [EthDocs](http://www.ethdocs.org/en/latest/) , [Wiki](https://github.com/ethereum/wiki/wiki)| [Wiki](https://github.com/jpmorganchase/quorum/wiki) | [Read the Docs](https://hyperledger-fabric.readthedocs.io/en/release/) | [Docs](https://docs.corda.net/) |
+| Github | [ethereum](https://github.com/ethereum/) | [J.P. Morgan Chase](https://github.com/jpmorganchase) | [hyperledger](https://github.com/hyperledger) | [Corda](https://github.com/corda) |
+| Forums | [Stack Exchange](https://ethereum.stackexchange.com/) | [tagged Quorum](https://stackoverflow.com/questions/tagged/quorum) | [tagged Hyperledger-fabric](https://stackoverflow.com/questions/tagged/hyperledger-fabric) | [tagged Corda](https://stackoverflow.com/questions/tagged/corda) |
+| Chat | [Gitter](https://gitter.im/ethereum/home) | ? | [Rocket](https://chat.hyperledger.org/) | [Slack](http://slack.corda.net/) |
 
 
 ### Consensus
@@ -59,6 +60,16 @@ Comparison of various technologies for creating distributed applications.
 | Proof of Stake (PoS) | Nodes 'stake' some valuable crypto-asset (e.g. ether) for the right to determine the order of transactions (i.e. create new blocks). Nodes are game-theoretically incentivised to be trustworthy through a system of rewards and punishments proportional to stake.  | Yes ([Casper](https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ)) | No | No | No |
 | Proof of Authority (PoA)| Only nodes with correctly signed certificates can determine the order of transactions and create new blocks. | Yes | Yes | Yes | Yes |
 | RAFT | Nodes elect a leader who's responsibility it is to determine the order of transactions. Fast consensus. Suitable only for private networks because leader based consensus algorithms are vulnerable to DDOS attack. Video: [Raft in 20 mins](https://www.youtube.com/watch?v=RHDP_KCrjUc) | No | [Yes](https://github.com/jpmorganchase/quorum/blob/master/raft/doc.md) | Not by default | Yes as [Notary Nodes](https://docs.corda.net/key-concepts-notaries.html) |
+
+
+### Networks & Governance
+
+|  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
+|----|----------|--------|--------------------|----------|
+| Public | Ethereum is generally domainated by ETH, but there exist *hard forks* including Ethereum Classic (ETC) and EtherZero (ETZ). There is one ETH [mainnet](http://ethdocs.org/en/latest/network/connecting-to-the-network.html) and several test nets including [Morden](http://ethdocs.org/en/latest/network/test-networks.html). Public networks generally use a PoW consensus algorithm. Governance of this network is determined only by the emergent behaviour of the nodes. In practice, governance is achieved by the community of developers. Disagreement in the community may result in a 'fork', eg: Ethereum Classic | No | No? | No |
+| Consortium/ Private | Anyone can create a new consortium or private network using PoW or PoA. The [Rinkeby](https://www.rinkeby.io/) testnet uses PoA. | Designed for consortium or private networks. Uses an Ethereum Network *and* a [Constellation](https://github.com/jpmorganchase/constellation) network side-by-side to provide private data features. | Designed for consortium or private networks. | Designed for consortium or private networks. |
+| Technology | [Ethereum Foundation](https://www.ethereum.org/foundation) | JP Morgan Chase | [Linux Foundation: Hyperledger Project](https://hyperledger.org/about/charter) | [R3](https://www.r3.com/): a network of [over 60 companies](https://www.r3.com/blog/2017/11/13/r3s-corda-partner-network-grows-to-over-60-companies-including-hewlett-packard-enterprise-intel-and-microsoft/) |
+
 
 
 ### Permissioning
@@ -81,12 +92,6 @@ Properly permissioned blockchain networks differ from unpermissioned blockchain 
 
 Note on private data and Coco Framework: support for (confidential transactions) should be present(or added)in the integrated blockchain protocol.
 
-### Strengths & Weaknesses
-
-|  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
-|----|----------|--------|--------------------|----------|
-| Strengths |  |  |  |  |
-| Weaknesses |  |  |  | * Unlike Ethereum's EVM that's guarenteed deterministic, there is no "Corda Virtual Machine" and Corda has no strong determinism guarantee. |
 
 ### Development
 
@@ -103,21 +108,24 @@ Note on private data and Coco Framework: support for (confidential transactions)
 
 2. The Ethereum Virtual Machine (EVM) can be thought of as a large decentralized computer containing millions of objects, called "accounts", which have the ability to maintain an internal database, execute code and talk to each other.
 
+
 ### Ecosystem
 
-
-### Documentation
-
-| Source | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
-|---|----------|--------|--------------------|----------|
-| Official | [EthDocs](http://www.ethdocs.org/en/latest/) , [Wiki](https://github.com/ethereum/wiki/wiki)| [Wiki](https://github.com/jpmorganchase/quorum/wiki) | [Read the Docs](https://hyperledger-fabric.readthedocs.io/en/release/) | [Docs](https://docs.corda.net/) |
-| Github | [ethereum](https://github.com/ethereum/) | [J.P. Morgan Chase](https://github.com/jpmorganchase) | [hyperledger](https://github.com/hyperledger) | [Corda](https://github.com/corda) |
-| Forums | [Stack Exchange](https://ethereum.stackexchange.com/) | [tagged Quorum](https://stackoverflow.com/questions/tagged/quorum) | [tagged Hyperledger-fabric](https://stackoverflow.com/questions/tagged/hyperledger-fabric) | [tagged Corda](https://stackoverflow.com/questions/tagged/corda) |
-| Chat | [Gitter](https://gitter.im/ethereum/home) | ? | [Rocket](https://chat.hyperledger.org/) | [Slack](http://slack.corda.net/) |
-
-
+|  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
+|----|----------|--------|--------------------|----------|
+| Browsers | [Mist](https://github.com/ethereum/mist), [Toshi](http://www.toshi.org/), [Status](https://status.im/), [Cypher](https://www.cipherbrowser.com/) |  |  |  |
+| Applications | [uPort](https://www.uport.me/), [Basic Attention Token](https://basicattentiontoken.org/), [auger](http://www.augur.net/), [Crypto Kitties](https://www.cryptokitties.co/), [EtherRisc](https://etherisc.com/), see [State of the Dapps](https://www.stateofthedapps.com/) for an extensive list |  |  |  |
+| Tools | [MetaMask](https://metamask.io/) |  |  |  |
 
 ### Production
+
+
+### Strengths & Weaknesses
+
+|  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
+|----|----------|--------|--------------------|----------|
+| Strengths |  |  |  |  |
+| Weaknesses |  |  |  | * Unlike Ethereum's EVM that's guarenteed deterministic, there is no "Corda Virtual Machine" and Corda has no strong determinism guarantee. |
 
 
 
