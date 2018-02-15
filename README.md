@@ -117,8 +117,6 @@ Note on private data and Coco Framework: support for (confidential transactions)
 | Applications | [uPort](https://www.uport.me/), [Basic Attention Token](https://basicattentiontoken.org/), [auger](http://www.augur.net/), [Crypto Kitties](https://www.cryptokitties.co/), [EtherRisc](https://etherisc.com/), see [State of the Dapps](https://www.stateofthedapps.com/) for an extensive list |  |  |  |
 | Tools | [MetaMask](https://metamask.io/) |  |  |  |
 
-### Production
-
 
 ### Strengths & Weaknesses
 
