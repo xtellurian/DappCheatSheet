@@ -118,28 +118,22 @@ Note on private data and Coco Framework: support for (confidential transactions)
 | Tools | [MetaMask](https://metamask.io/) |  |  |  |
 
 
-### Strengths & Weaknesses
+### Strengths
 
-|  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
-|----|----------|--------|--------------------|----------|
-| Strengths |  |  |  |  |
-| Weaknesses |  |  |  | * Unlike Ethereum's EVM that's guarenteed deterministic, there is no "Corda Virtual Machine" and Corda has no strong determinism guarantee. |
+| Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
+|----------|--------|--------------------|----------|
+| Largest developer community and ecosystem | Native Confidentiality tools | Component Modularity | Private data between 2+ parties |
+| Public and Private options | Permissioning tools |  |  |
+| Strong EVM determinism |  |  |  |
+|  |  |  |  |
+
+### Weaknesses
+
+| Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
+|----------|--------|--------------------|----------|
+| No native "enterprise" features |  |  | Unlike Ethereum's EVM that's guarenteed deterministic, there is no "Corda Virtual Machine" and Corda has no strong determinism guarantee. |
+|  |  |  | Identities are tied to nodes, rather than public/private key pairs. |
+|  |  |  | Currently, state is stored to disk via H2 SQL, disabling high availability |
+|  |  |  |  |
 
 
-
-## Table Templates
-
-
-|  | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
-|----|----------|--------|--------------------|----------|
-| P1 |  |  |  |  |
-| P2 |  |  |  |  |
-| P3 |  |  |  |  |
-
-
-|  | XXX |
-|--------------------|---|
-| Ethereum |  |
-| Quorum |  |
-| Hyperledger Fabric |  |
-| R3 Corda |  |
