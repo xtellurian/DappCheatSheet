@@ -28,16 +28,14 @@ Comparison of various technologies for creating distributed applications.
 
 |    | Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
 |----|----------|--------|--------------------|----------|
-| Governance | Developer Community| ?? | Linux Foundation | R3 Consortium |
+| Documentation | Good | OK | OK | Good |
 | Consensus | PoA, PoW, PoS (beta) | RAFT, Instanbul BFT | Pluggable (PoW, PoA, BFT etc) | Notary: RAFT |
-| Permissions |  |  |  |  |
-| Confidentiality |  |  |  |  |
-| Development | Solidity & Vyper | Solidity | Go & NodeJS | Kotlin & Java |
-| Client | web3 | web3?? | ?? | Node HTTP |
-| Weaknesses |  |  |  |  |
-| Ecosystem | Truffle, OpenZepplin, Cosmos | ?? | ?? |  |
-| Documentation | Good | ?? | ?? | Good |
-| Deployed to Production | Yes | ?? | ?? | No |
+| Networks & Governance | Public/Consortium/Private. Ethereum Foundation| Consortium/Private. JP Morgan Chase | Consortium/Private. Linux Foundation | Consortium/Private. R3 Consortium |
+| Permissioning | No | Yes | Yes, with Sawtooth  | Yes |
+| Native Confidentiality | No | Yes | Yes | Yes |
+| Development | Language: Solidity, Client: web3.js/ web3j | Language: Solidity, Client: web3.js (modified) | Go & NodeJS | Kotlin & Java |
+| Ecosystem | Large | Potentially Large (from Ethereum) | Medium | Small |
+| In Production | Yes | No | No | No |
 
 
 ### Documentation
@@ -55,7 +53,7 @@ Comparison of various technologies for creating distributed applications.
 
 | Algorithm | Description |  Ethereum | Quorum | Hyperledger Fabric | R3 Corda |
 |----|----|:----------:|:--------:|:--------------------:|:----------:|
-| Byzantine Fault Tolerant (BFT) | General term: a network that avoids catastrophic system failure, even if some of the nodes are unreliable. Named after a 1982 paper by Leslie, Shostak and Pease called "The Byzantine Generals Problem".| Yes | Yes | Yes | Yes |
+| Byzantine Fault Tolerant (BFT) | General term: a network that avoids catastrophic system failure, even if some of the nodes are unreliable. Named after a 1982 paper by Leslie, Shostak and Pease called "The Byzantine Generals Problem".| Yes | Yes | Yes | Notaries: Yes via RAFT. Nodes: No by design (all nodes are trusted) |
 | Proof of Work (PoW) | Revolutionary consensus algorithm implemented in Bitcoin. Nodes solve artibrarily hard cryptographic puzzles, randomly distributing the right determine the order of transactions accross the nodes. Generally not scaleable (Tx/sec). Compute intensive. Enables public networks and anonymous nodes. | Yes | No | No | No | 
 | Proof of Stake (PoS) | Nodes 'stake' some valuable crypto-asset (e.g. ether) for the right to determine the order of transactions (i.e. create new blocks). Nodes are game-theoretically incentivised to be trustworthy through a system of rewards and punishments proportional to stake.  | Yes ([Casper](https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ)) | No | No | No |
 | Proof of Authority (PoA)| Only nodes with correctly signed certificates can determine the order of transactions and create new blocks. | Yes | Yes | Yes | Yes |
