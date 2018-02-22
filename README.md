@@ -134,4 +134,5 @@ Note on private data and Coco Framework: support for (confidential transactions)
 |  |  |  | Currently, state is stored to disk via H2 SQL, disabling high availability |
 |  |  |  |  |
 
-
+### Relevant resources
+* Easy to spin up blockchain Ethereum network on Azure (different to the Ethereum Consortium Network ARM template) [Ethereum ARM template](https://github.com/EthereumEx/ethereum-arm-templates/tree/master/ethereum-consortium) 
