@@ -134,4 +134,6 @@ Note on private data and Coco Framework: support for (confidential transactions)
 |  |  |  | Currently, state is stored to disk via H2 SQL, disabling high availability |
 |  |  |  |  |
 
+### Relevant resources
 
+* [Ethereum ARM template](https://github.com/EthereumEx/ethereum-arm-templates/tree/master/ethereum-consortium) to make it easy to spin up a Blockchain network will work on it's own or that could easily be connected to an existing network.
