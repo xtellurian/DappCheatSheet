@@ -134,4 +134,7 @@ Note on private data and Coco Framework: support for (confidential transactions)
 |  |  |  | Currently, state is stored to disk via H2 SQL, disabling high availability |
 |  |  |  |  |
 
+### Relevant resources
 
+* [Ethereum ARM template](https://github.com/EthereumEx/ethereum-arm-templates/tree/master/ethereum-consortium) to make it easy to spin up a Blockchain network will work on it's own or that could easily be connected to an existing network.
+* A how-to guide on setting up your [Windows 10 PC for Ethereum development](https://davidburela.wordpress.com/2017/05/12/how-to-install-truffle-testrpc-on-ubuntu-or-windows-10-with-windows-subsystem-for-linux/)  
